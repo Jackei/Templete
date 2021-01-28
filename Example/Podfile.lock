@@ -1,0 +1,16 @@
+PODS:
+  - Templete (0.1.0)
+
+DEPENDENCIES:
+  - Templete (from `../`)
+
+EXTERNAL SOURCES:
+  Templete:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Templete: 32587c73a8b9fd833050a53d6fb74f03a1c39383
+
+PODFILE CHECKSUM: ce66b157f4e0e597c06a3926b028da529bfb9f89
+
+COCOAPODS: 1.10.0

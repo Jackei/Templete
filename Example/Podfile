@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Templete_Example' do
+  pod 'Templete', :path => '../'
+
+  target 'Templete_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

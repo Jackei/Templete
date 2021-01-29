@@ -40,13 +40,13 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		664E4A6B69179749F4BEDA6F /* Pods-Templete_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templete_Example.release.xcconfig"; path = "Target Support Files/Pods-Templete_Example/Pods-Templete_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8DE9BB686254D19DC867D7EC /* Pods_Templete_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Templete_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AB7ECA2E08D13E61A0DE713 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9B38522233B517A21119FB03 /* Templete.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Templete.podspec; path = ../Templete.podspec; sourceTree = "<group>"; };
+		9AB7ECA2E08D13E61A0DE713 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9B38522233B517A21119FB03 /* Templete.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Templete.podspec; path = ../Templete.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A950C97EEFF737E24E712C25 /* Pods-Templete_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templete_Tests.release.xcconfig"; path = "Target Support Files/Pods-Templete_Tests/Pods-Templete_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ABED237BAE2258C5AF2B2895 /* Pods_Templete_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Templete_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D0201F5B4A4507D0F3BC86 /* Pods-Templete_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templete_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Templete_Tests/Pods-Templete_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEFC887084B172A28D758687 /* Pods-Templete_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Templete_Example.debug.xcconfig"; path = "Target Support Files/Pods-Templete_Example/Pods-Templete_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F82CC4CE5E3E0C4E2E7A2FB2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F82CC4CE5E3E0C4E2E7A2FB2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				D5D0201F5B4A4507D0F3BC86 /* Pods-Templete_Tests.debug.xcconfig */,
 				A950C97EEFF737E24E712C25 /* Pods-Templete_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Templete_Example/Pods-Templete_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Templete/Templete.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Templete.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

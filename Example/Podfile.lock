@@ -1,15 +1,42 @@
 PODS:
-  - Templete (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - SDWebImage (5.10.3):
+    - SDWebImage/Core (= 5.10.3)
+  - SDWebImage/Core (5.10.3)
+  - Templete (0.1.0):
+    - AFNetworking
+    - SDWebImage
 
 DEPENDENCIES:
   - Templete (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - SDWebImage
 
 EXTERNAL SOURCES:
   Templete:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Templete: 32587c73a8b9fd833050a53d6fb74f03a1c39383
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  SDWebImage: e378178472b735e84b007bfb55514c97948a0598
+  Templete: 12b670c75d1f2c5b318f0949f42f847c9f81aaa3
 
 PODFILE CHECKSUM: ce66b157f4e0e597c06a3926b028da529bfb9f89
 

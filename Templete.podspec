@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'this is a test'
 
-  s.homepage         = 'https://github.com/qizhijian/Templete'
+  s.homepage         = 'https://github.com/Jackei/Templete'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jackei' => 'qizhijian123@gmail.com' }
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version = '5.0'
   s.source_files = 'Templete/Classes/**/*'
   
   # s.resource_bundles = {
